@@ -27,6 +27,7 @@ a {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
 }
 .header-block__links--items {
   list-style-type: none;
@@ -47,6 +48,11 @@ a {
   border: 1px solid #ffffff;
   padding: 6px 20px 6px 20px;
 }
+.header-block__logo {
+  display: flex;
+  justify-content: space-between;
+  align-content: baseline;
+}
 .header-block__logo a {
   text-transform: uppercase;
   color: #ffffff;
@@ -56,10 +62,14 @@ a {
 .header-block__logo--bold {
   font-weight: 700;
 }
-.header-block__logo a::before {
+.header-block__logo--img {
+  margin-top: 0.19rem;
+  margin-right: 0.6rem;
+}
+.header-block__logo--img::before {
   content: url("../img/logo/dart-logo.svg");
-  width: 24px;
-  height: 24px;
+  width: 1.9rem;
+  height: 1.9rem;
 }
 
 .active a {
