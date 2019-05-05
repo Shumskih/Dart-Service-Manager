@@ -1,52 +1,65 @@
-@import url("https://fonts.googleapis.com/css?family=Raleway:400,600");
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700");
 * {
   box-sizing: border-box;
   font-family: "Raleway", sans-serif;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 25px;
+}
+
+a {
+  text-decoration: none;
 }
 
 .container {
   width: 1600px;
-  height: 100vh;
   margin: 0 auto;
 }
 
-.header-block {
-  display: flex;
-  justify-content: space-around;
-  align-content: space-around;
+.header {
   width: 100%;
-  height: 100vh;
-  margin: 0;
-  padding-top: 60px;
-  background: #061e37 url("../img/header/bg.svg") no-repeat;
-  background-size: cover;
+  height: 750px;
+  background: #061e37 url(../img/header/bg.svg) no-repeat;
 }
-.header-block__main-menu--items {
+
+.header-block__main-menu {
+  width: 90rem;
+  height: 1.8rem;
+  margin: 0 auto;
+  padding-top: 3.75rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.header-block__links--items {
+  list-style-type: none;
+  width: 27.5rem;
   display: flex;
   justify-content: space-between;
-  align-content: space-around;
-  width: 440px;
-  height: 14px;
+  align-content: space-between;
   margin: 0;
-  list-style-type: none;
-  font-family: "Raleway", sans-serif;
+  padding: 0;
 }
-.header-block__main-menu--item a {
-  text-decoration: none;
-  font-size: 0.94rem;
+.header-block__links--item a {
   color: #ffffff;
+  font-size: 0.9rem;
 }
 .header-block__sign-up--button {
-  font-size: 0.75rem;
-  text-transform: lowercase;
-  text-decoration: none;
   color: #ffffff;
+  text-transform: lowercase;
   border: 1px solid #ffffff;
-  border-radius: 2px;
-  padding: 6px 20px;
+  padding: 6px 20px 6px 20px;
+}
+.header-block__logo a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 15px;
+}
+.header-block__logo--bold {
+  font-weight: 700;
+}
+.header-block__logo a::before {
+  content: url("../img/logo/dart-logo.svg");
+  width: 24px;
+  height: 24px;
 }
 
 .active a {
