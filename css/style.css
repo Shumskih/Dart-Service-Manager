@@ -1,17 +1,274 @@
-/* Error: Can't find stylesheet to import.
- *   ,
- * 4 | @import sections/_advantages
- *   |         ^^^^^^^^^^^^^^^^^^^^
- *   '
- *   style.sass 4:9  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: Can't find stylesheet to import.\a   \2577 \a 4 \2502  @import sections/_advantages\a   \2502          ^^^^^^^^^^^^^^^^^^^^\a   \2575 \a   style.sass 4:9  root stylesheet";
+@import url("https://fonts.googleapis.com/css?family=Raleway:400,600,700,800");
+* {
+  box-sizing: border-box;
+  font-family: "Raleway", sans-serif;
 }
+
+body {
+  max-width: 100rem;
+  margin: 0 auto;
+  background-color: #f5f2f1;
+}
+
+a {
+  text-decoration: none;
+}
+
+.container {
+  max-width: 90%;
+  margin: 0 auto;
+}
+
+.button {
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.15);
+  border-radius: 0.3rem;
+  padding: 1.4rem 1.75rem;
+  font-size: 0.9rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin-right: 1.9rem;
+}
+
+.header {
+  width: 100%;
+  min-height: 46.875rem;
+  margin: 0 auto;
+  background: #061e37 url(../img/header/bg.svg) no-repeat;
+}
+
+.header-block__main-menu {
+  width: 90%;
+  height: 1.8rem;
+  margin: 0 auto 10.75rem auto;
+  padding-top: 3.75rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  align-items: center;
+}
+.header-block__links--items {
+  list-style-type: none;
+  width: 27.5rem;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  align-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.header-block__links--item a {
+  color: #ffffff;
+  font-size: 0.9rem;
+}
+.header-block__sign-up--button {
+  color: #ffffff;
+  text-transform: lowercase;
+  font-size: 0.75rem;
+  border: 1px solid #ffffff;
+  padding: 6px 20px 6px 20px;
+}
+.header-block__logo {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-justify-content: space-between;
+  -moz-justify-content: space-between;
+  -ms-justify-content: space-between;
+  justify-content: space-between;
+  align-content: baseline;
+}
+.header-block__logo a {
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 0.9rem;
+  line-height: 15px;
+}
+.header-block__logo--bold {
+  font-weight: 700;
+}
+.header-block__logo--img {
+  margin-top: 0.19rem;
+  margin-right: 0.6rem;
+}
+.header-block__logo--img::before {
+  content: url("../img/logo/dart-logo.svg");
+  width: 1.9rem;
+  height: 1.9rem;
+}
+.header-block__description-more {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-content: center;
+  max-width: 90%;
+  margin: 0 auto;
+}
+.header-block__description--title {
+  font-size: 3.4rem;
+  color: #fff;
+  line-height: 4rem;
+  font-weight: 800;
+  text-transform: uppercase;
+}
+.header-block__description--text {
+  font-size: 1.1rem;
+  color: #fff;
+  line-height: 2.2rem;
+  font-weight: 400;
+  max-width: 36rem;
+  margin-bottom: 2.4rem;
+}
+.header-block__description--button {
+  display: flex;
+  justify-content: flex-start;
+  align-content: flex-start;
+}
+.header-block__description--video {
+  position: relative;
+  width: 37.5rem;
+  height: 20rem;
+  border: 1px solid #061e37;
+  border-radius: 0.3rem;
+  background-color: #fff;
+  opacity: 0.9;
+}
+.header-block__description--video--background-img {
+  position: absolute;
+  top: 0;
+  left: -0.875rem;
+  background-image: url("../img/video/Static-img-video.png");
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+  opacity: 0.2;
+  width: 100%;
+  height: 100%;
+}
+.header-block__description--video--square {
+  position: absolute;
+  top: 7.3rem;
+  left: 45%;
+  width: 3.75rem;
+  height: 3.75rem;
+  background-color: #061e37;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 0.3rem;
+  cursor: pointer;
+}
+.header-block__description--video--arrow {
+  position: absolute;
+  top: 1.1rem;
+  left: 30%;
+}
+.header-block__description--video--text {
+  position: absolute;
+  top: 12.3rem;
+  left: 41%;
+  font-size: 0.75rem;
+  color: #061e37;
+  font-weight: 700;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.header-block .button__buy-now {
+  padding-right: 2.6rem;
+  padding-left: 2.6rem;
+  color: #ffffff;
+  background-color: #061e37;
+}
+.header-block .button__try-for-free {
+  color: #061e37;
+  background-color: #fff;
+}
+
+.active a {
+  color: #061e37;
+  font-weight: 600;
+}
+
+.advantages-block {
+  max-width: 100%;
+  color: #061e37;
+  background-color: #fff;
+  padding-top: 6.2rem;
+}
+.advantages-block__description {
+  max-width: 34.7rem;
+  margin: 0 auto 6rem auto;
+  text-align: center;
+}
+.advantages-block__description--title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin: 0 auto 0.9rem auto;
+}
+.advantages-block__description--subtitle {
+  font-size: 1.6rem;
+  color: #b0bec5;
+  font-weight: 600;
+  margin: 0 auto 1.25rem auto;
+}
+.advantages-block__description--text {
+  font-size: 0.9rem;
+  color: #b0bec5;
+  line-height: 1.6rem;
+  max-width: 34.4rem;
+}
+.advantages-block__items {
+  display: flex;
+  justify-content: space-around;
+  align-content: space-around;
+  margin-bottom: 3rem;
+}
+.advantages-block__items--item {
+  max-width: 21.5rem;
+  margin-bottom: 4.9rem;
+}
+.advantages-block__item--title {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  font-weight: 600;
+  text-align: center;
+}
+.advantages-block__item--description {
+  font-size: 0.9rem;
+  color: #78909c;
+  text-align: center;
+}
+.advantages-block__item--icon {
+  font-size: 5rem;
+  text-align: center;
+}
+.advantages-block__link {
+  text-align: center;
+  min-height: 9.69rem;
+}
+.advantages-block__link--button {
+  color: #fff;
+  background-color: #1de9b6;
+  margin: 0 auto;
+}
+
+.icofont-tasks-alt {
+  color: #b388ff;
+}
+
+.icofont-team {
+  color: #80d8ff;
+}
+
+.icofont-worker {
+  color: #ea80fc;
+}
+
+/*# sourceMappingURL=style.css.map */
