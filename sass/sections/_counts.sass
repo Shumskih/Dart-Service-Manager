@@ -1,0 +1,58 @@
+.counts
+  display: flex
+  align-content: center
+
+  &__item
+    flex-basis: 25%
+    display: flex
+    justify-content: center
+    min-height: 9.3rem
+
+    &:first-child
+      background-color: #80d8ff
+
+    &:nth-child(2)
+      background-color: #82b1ff
+
+    &:nth-child(3)
+      background-color: #b388ff
+
+    &:nth-child(4)
+      background-color: #ea80fc
+
+    &--text
+      font-size: 1.25rem
+      color: #fff
+      font-weight: 800
+      line-height: 1.6rem
+      margin: auto auto auto 0
+
+    &--icon
+      position: relative
+      border: 0.06rem solid #fff
+      background-color: #fff
+      width: 3.75rem
+      height: 3.75rem
+      border-radius: 50%
+      font-size: 1.9rem
+      margin: auto 1rem auto auto
+
+      & .icofont-bank,
+      & .icofont-download,
+      & .icofont-check,
+      & .icofont-users
+        position: absolute
+        top: 0.85rem
+        left: 0.85rem
+
+      & .icofont-bank
+        color: #80d8ff
+
+      & .icofont-download
+        color: #82b1ff
+
+      & .icofont-check
+        color: #b388ff
+
+      & .icofont-users
+        color: #ea80fc

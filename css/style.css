@@ -271,4 +271,61 @@ a {
   color: #ea80fc;
 }
 
+.counts {
+  display: flex;
+  align-content: center;
+}
+.counts__item {
+  flex-basis: 25%;
+  display: flex;
+  justify-content: center;
+  min-height: 9.3rem;
+}
+.counts__item:first-child {
+  background-color: #80d8ff;
+}
+.counts__item:nth-child(2) {
+  background-color: #82b1ff;
+}
+.counts__item:nth-child(3) {
+  background-color: #b388ff;
+}
+.counts__item:nth-child(4) {
+  background-color: #ea80fc;
+}
+.counts__item--text {
+  font-size: 1.25rem;
+  color: #fff;
+  font-weight: 800;
+  line-height: 1.6rem;
+  margin: auto auto auto 0;
+}
+.counts__item--icon {
+  position: relative;
+  border: 0.06rem solid #fff;
+  background-color: #fff;
+  width: 3.75rem;
+  height: 3.75rem;
+  border-radius: 50%;
+  font-size: 1.9rem;
+  margin: auto 1rem auto auto;
+}
+.counts__item--icon .icofont-bank, .counts__item--icon .icofont-download, .counts__item--icon .icofont-check, .counts__item--icon .icofont-users {
+  position: absolute;
+  top: 0.85rem;
+  left: 0.85rem;
+}
+.counts__item--icon .icofont-bank {
+  color: #80d8ff;
+}
+.counts__item--icon .icofont-download {
+  color: #82b1ff;
+}
+.counts__item--icon .icofont-check {
+  color: #b388ff;
+}
+.counts__item--icon .icofont-users {
+  color: #ea80fc;
+}
+
 /*# sourceMappingURL=style.css.map */
