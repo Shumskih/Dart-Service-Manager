@@ -328,4 +328,92 @@ a {
   color: #ea80fc;
 }
 
+.services {
+  background-color: #fff;
+  padding-bottom: 6.25rem;
+}
+
+.services__description--title, .services__description--text {
+  text-align: center;
+  margin: 0 auto;
+}
+.services__description--title {
+  font-size: 2.8rem;
+  font-weight: 600;
+  color: #061e37;
+  padding-top: 6.25rem;
+  margin-bottom: 1.8rem;
+}
+.services__description--text {
+  font-size: 0.9rem;
+  line-height: 1.5rem;
+  color: #b0bec5;
+  max-width: 34.7rem;
+  margin-bottom: 3rem;
+}
+
+.accordion-menu__item {
+  max-width: 50rem;
+  min-height: 3.125rem;
+  margin: 0 auto;
+  box-shadow: 0 0.125rem 0.31rem rgba(0, 0, 0, 0.13);
+  border-radius: 0.3rem;
+  transition-property: min-height;
+  transition-duration: 0.5s;
+}
+.accordion-menu__header, .accordion-menu__body {
+  max-width: 46.8rem;
+  margin: 0 auto;
+}
+.accordion-menu__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.accordion-menu__header--title-group {
+  display: flex;
+  margin-top: 0.6rem;
+}
+.accordion-menu__header--title-group--icon {
+  font-size: 1.25rem;
+  line-height: 1.6rem;
+  color: #061e37;
+  margin-top: 0.2rem;
+  margin-right: 1.5rem;
+}
+.accordion-menu__header--title-group--title {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #061e37;
+  text-transform: uppercase;
+  align-self: center;
+}
+.accordion-menu__body {
+  display: none;
+}
+.accordion-menu__item:hover {
+  min-height: 15rem;
+  box-shadow: 0 0.125rem 1.25rem rgba(0, 0, 0, 0.13);
+  border-radius: 0.3rem;
+  transition-property: min-height;
+  transition-duration: 0.5s;
+}
+.accordion-menu__item:hover .accordion-menu__body {
+  display: flex;
+  justify-content: space-between;
+}
+.accordion-menu__item:hover .accordion-menu__body--img {
+  border: 0.01rem solid #b0bec5;
+  border-radius: 0.3rem;
+  max-width: 15.9rem;
+  min-height: 9.7rem;
+  margin-top: 1rem;
+}
+.accordion-menu__item:hover .accordion-menu__body--text {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #061e37;
+  margin-left: 1.5rem;
+}
+
 /*# sourceMappingURL=style.css.map */
